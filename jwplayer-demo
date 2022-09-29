@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+* {margin:0}
+.video {widht:100px;haight:50px;margin:0px auto;}
+
+</style>
+
+  </head>
+<body>
+  <div class='video'>
+  <script src="https://use.fontawesome.com/20603b964f.js"></script>
+<script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+		<script type="text/javascript">jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';</script><div id="myElement"></div><script type="text/javascript">
+					    jwplayer("myElement").setup({													    	
+								height: 40,	
+								width:'100%',
+					    		autostart: false,
+								controls:true,
+				file : 'paste your url here',
+				abouttext: 'FILMKACA',
+				aboutlink: 'http://filmkaca.xyz',
+				tracks:[{"file":"<?php echo $cc; ?>","label":"Indonesia","kind":"captions","default":"true"}],
+				captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
+				sharing: {
+					sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
+					code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+					link: "<?php echo $sharing;?>"
+						}
+						    })
+					</script>
+  </div>
+  </body>
+</html>
